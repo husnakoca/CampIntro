@@ -26,6 +26,8 @@ namespace Methods
             product2.Price = 20;
             product2.Explanation = "Pink Grave's Strawberries";
 
+            //array means structure that holding the data
+
             Product[] products = new Product[] { product1, product2 };
 
             foreach (var product in products)

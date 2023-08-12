@@ -8,7 +8,7 @@ namespace Methods
 {
     class Product
     {
-        //property
+        //property prop tabtab
         public int Id { get; set; }
         public string Name { get; set; }
         public double Price { get; set; }

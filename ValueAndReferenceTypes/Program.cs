@@ -21,7 +21,7 @@ namespace ValueAndReferenceTypes
             numbers1 = numbers2;
             numbers2[0] = 999;
             //numbers1[0]?? 999
-            //iny, dec,mal, float, double, bool = value type ---> stack
+            //int, decimal, float, double, bool = value type ---> stack ----> sayi1=sayi2 dediği anda 10 gider 30 olur , sayi2 65 olunca 30 gider 65 olur ama bunun sayi1 ile hiçbir bağı olmaz
             //array, class, interface = reference type ---> heap
         }
     }

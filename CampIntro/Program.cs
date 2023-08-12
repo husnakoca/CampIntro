@@ -11,7 +11,7 @@ namespace CampIntro
         static void Main(string[] args)
         {
             //type safety
-            //do not repeat yourself
+            //do not repeat yourself -DRY - best practice -clean code
             //alias = değer tutucu
             Console.WriteLine("Hello World!");
 
