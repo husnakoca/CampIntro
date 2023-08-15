@@ -8,26 +8,18 @@ namespace ClassMetotDemo
 {
     public class CustomerManager
     {
-        static void Main(string[] args)
+        public void Add(Customer customer)
         {
-            Customer customer1 = new Customer();
-            customer1.Id = 727772587;
-            customer1.Name = "Sarp";
-            customer1.Surname = "Palaur";
-            customer1.Credit = 1.02;
+            Console.WriteLine("Congrats! Added to bank. : " + customer.Name);
+            Console.ReadLine();
+
         }
 
-        static void Delete(Customer customer)
+        public void Delete(Customer customer)
         {
-            Console.WriteLine(customer.Name + " " + customer.Surname + "'s record has been deleted successfully.");
-        }
+            Console.WriteLine("Congrats! The customer deleted to bank: " + customer.Name);
+            Console.ReadLine();
 
-        public void Listele(Customer customer)
-        {
-            Console.WriteLine(customer.Name + " " + "Customer");
-            Console.WriteLine(customer.Surname);
-            Console.WriteLine(customer.Id);
-            Console.WriteLine(customer.Credit);
         }
     }
 }

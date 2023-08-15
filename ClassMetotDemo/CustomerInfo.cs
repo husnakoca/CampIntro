@@ -9,7 +9,7 @@ namespace ClassMetotDemo
     class CustomerInfo
     {
 
-        static void Add(string[] args)
+        static void Main(string[] args)
         {
             Customer customer1 = new Customer();
             customer1.Id = 7264737;
@@ -40,7 +40,11 @@ namespace ClassMetotDemo
                 Console.WriteLine("------------------------");
             }
 
-       
+            CustomerManager customerManager = new CustomerManager();
+            customerManager.Add(customer1);
+            customerManager.Add(customer2);
+            customerManager.Delete(customer3);
+
         }
     }
 }
