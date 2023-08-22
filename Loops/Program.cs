@@ -18,7 +18,9 @@ namespace Loops
                 Console.WriteLine(courses[i]);
             }
 
+            Console.WriteLine("------------------------");
             Console.WriteLine("And of the for");
+            Console.WriteLine("------------------------");
 
             foreach (string course in courses)
             {

@@ -29,7 +29,10 @@ namespace ClassMetotDemo
             customer3.Surname = "Ozcalkan";
             customer3.Credit = 855;
 
-            Customer[] customers = new Customer[] { customer1, customer2, customer3 };
+            List<Customer> customers = new List<Customer> { customer2 };
+            customers.Add(customer1);
+            customers.Add(customer3);
+            customers.Remove(customer2);
 
             foreach (Customer customer in customers)
             {
@@ -40,10 +43,16 @@ namespace ClassMetotDemo
                 Console.WriteLine("------------------------");
             }
 
+            CustomerManager customerManager1 = new CustomerManager();
+            customerManager1.Delete(customer2); 
+
             CustomerManager customerManager = new CustomerManager();
             customerManager.Add(customer1);
-            customerManager.Add(customer2);
-            customerManager.Delete(customer3);
+
+            CustomerManager customerManager2 = new CustomerManager();
+            customerManager2.Add(customer3);
+
+
 
         }
     }
