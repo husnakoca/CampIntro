@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace ClassMetotDemo
 {
-    class CustomerManager
+
+    public class CustomerManager : IInterfaceIntro<Customer>
+
     {
         public void Add(Customer customer)
         {
@@ -18,5 +20,6 @@ namespace ClassMetotDemo
         {
             Console.WriteLine(customer.Name + " deleted to bank.");
         }
+
     }
 }

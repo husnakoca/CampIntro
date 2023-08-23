@@ -29,12 +29,13 @@ namespace ClassMetotDemo
             customer3.Surname = "Ozcalkan";
             customer3.Credit = 855;
 
-            List<Customer> customers = new List<Customer> { customer2 };
-            customers.Add(customer1);
-            customers.Add(customer3);
-            customers.Remove(customer2);
+            CustomerManager customerManager1 = new CustomerManager();
+          
 
-            foreach (Customer customer in customers)
+            List<Customer> Listcustomers = new List<Customer>() { customer1, customer3 };
+
+
+            foreach (Customer customer in Listcustomers)
             {
                 Console.WriteLine("Customer ID: " + customer.Id);
                 Console.WriteLine("Customer Name: " + customer.Name);
@@ -42,16 +43,9 @@ namespace ClassMetotDemo
                 Console.WriteLine("Customer Credit: " + customer.Credit);
                 Console.WriteLine("------------------------");
             }
-
-            CustomerManager customerManager1 = new CustomerManager();
-            customerManager1.Delete(customer2); 
-
-            CustomerManager customerManager = new CustomerManager();
-            customerManager.Add(customer1);
-
-            CustomerManager customerManager2 = new CustomerManager();
-            customerManager2.Add(customer3);
-
+            customerManager1.Delete(customer2);
+            customerManager1.Add(customer1);
+            customerManager1.Add(customer3);
 
 
         }

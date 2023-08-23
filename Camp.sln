@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsIntro", "GenericsIn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW", "HW\HW.csproj", "{EA8A3263-7F6B-4D45-AFB9-702112A672CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mydictionary", "Mydictionary\Mydictionary.csproj", "{27C423E3-81F7-427B-9A95-3B5DA70295A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{EA8A3263-7F6B-4D45-AFB9-702112A672CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA8A3263-7F6B-4D45-AFB9-702112A672CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA8A3263-7F6B-4D45-AFB9-702112A672CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27C423E3-81F7-427B-9A95-3B5DA70295A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27C423E3-81F7-427B-9A95-3B5DA70295A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27C423E3-81F7-427B-9A95-3B5DA70295A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27C423E3-81F7-427B-9A95-3B5DA70295A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
