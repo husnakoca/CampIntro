@@ -9,7 +9,7 @@ using System.Windows.Documents;
 
 namespace OOP3
 {
-    //Interfaceleri birbirinin alternatifi olan ama kod içerikleri farklı olan durumlarda kullanırız
+    //We use interfaces in situations where they are alternatives to each other but have different code contents.
     class Program
     {
         static void Main(string[] args)
