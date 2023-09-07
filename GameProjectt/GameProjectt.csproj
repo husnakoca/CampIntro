@@ -44,7 +44,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Campaign.cs" />
-    <Compile Include="CampaignInfo.cs" />
     <Compile Include="CampaignManager.cs" />
     <Compile Include="GameManager.cs" />
     <Compile Include="Gamer.cs" />

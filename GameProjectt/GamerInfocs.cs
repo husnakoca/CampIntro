@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GameProjectt
+﻿namespace GameProjectt
 {
-    public class GamerInfo
+    public class GameInfo
     {
         static void Main(string[] args)
         {
@@ -25,6 +19,17 @@ namespace GameProjectt
             gamer2.NationalId = 10269338081;
             gamer2.EMail = "sametgonullu@gmail.com";
             gamer2.DateOfBirth = "30.06.1989";
+
+            Campaign campaign1 = new Campaign();
+            campaign1.Id = 3543521;
+            campaign1.Name = "Super Weekend!";
+            campaign1.Sales = "Monthly gaming membership is only $500 instead of $600!";
+
+            Campaign campaign2 = new Campaign();
+            campaign2.Id = 8743687;
+            campaign2.Name = "Huge Discount!";
+            campaign2.Sales = "50% discount on game character costumes for today!";
+
         }
     }
 }
