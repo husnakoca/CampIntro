@@ -1,8 +1,10 @@
 ﻿using System;
 
 namespace GameProjectt
-{
-    class GamerManager : IGameService
+
+{   //microservice
+    
+    class GamerManager : IGamerService
     {
         public void Add()
         {

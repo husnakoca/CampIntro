@@ -8,10 +8,10 @@ namespace GameProjectt
 {
     internal interface IGameService
     {
-        void Add();
+        void Add(Gamer gamer); 
 
-        void Update();
+        void Update(Gamer gamer);
 
-        void Delete();
+        void Delete(Gamer gamer);
     }
 }
