@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameProjectt
 {
-    internal interface IGameService
+    interface IGamerService
     {
         void Add(Gamer gamer); 
 

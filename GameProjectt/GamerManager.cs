@@ -6,17 +6,37 @@ namespace GameProjectt
     
     class GamerManager : IGamerService
     {
-        public void Add()
+        IUserValidationService _userValidationService;
+
+        public GamerManager()
         {
-            Console.WriteLine("Congrats! The gamer acoount created.");
         }
 
-        public void Delete()
+        public GamerManager(IUserValidationService userValidationService)
+        {
+            _userValidationService = userValidationService;
+        }
+
+        public void Add(Gamer gamer)
+        {
+            if (_userValidationService.Validate(gamer) == true)
+            {
+                Console.WriteLine("Congrats! The gamer acoount created.");
+
+            }
+
+            else
+            {
+                Console.WriteLine("Verification failed. Registration failed.");
+            }
+        }
+
+        public void Delete(Gamer gamer)
         {
             Console.WriteLine("The gamer account deleted.");
         }
 
-        public void Update()
+        public void Update(Gamer gamer)
         {
             Console.WriteLine("The gamer account updated");
         }

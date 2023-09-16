@@ -4,13 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp3
+namespace GameProjectt
 {
-    interface ICreditManager
+    interface IUserValidationService
     {
-        void Calculate();
-        void BiseyYap();
-
-
+        bool Validate(Gamer gamer);
     }
 }

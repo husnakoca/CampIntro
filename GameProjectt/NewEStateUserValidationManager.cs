@@ -4,15 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp3
+namespace GameProjectt
 {
-    class DataBaseLoggerServices : ILoggerService
-
+    class NewEStateUserValidationManager : IUserValidationService
     {
-        public void Log()
+        public bool Validate(Gamer gamer)
         {
-            Console.WriteLine("Logged to database.");
-
+            return true;
         }
     }
 }

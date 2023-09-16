@@ -11,11 +11,15 @@ namespace GameProject
     {
         static void Main(string[] args)
         {
-            IGameService gamerManager = new GamerManager();
-            IGameService campaignManager = new CampaignManager();
-
-
-
+            GamerManager gamerManager = new GamerManager(new NewEStateUserValidationManager());
+            gamerManager.Add(new Gamer
+            {
+                Id = 1,
+                YearOfBirth = 1985,
+                Name = "Engin",
+                Surname = "Demirog",
+                NationalId = 12345
+            });
         }
     }
-}
+} 
